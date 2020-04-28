@@ -9,12 +9,10 @@ body, html{
 /* Header */
 
 header{
-    height: 700px;
+    height: 100px;
     width: 100%;
-    background: url(images/main-image.jpg) center;
 }
 h1{
-    color: white;
     margin-left: 30px;
     margin-top: 50px;
     margin-left: 70px;
@@ -22,11 +20,11 @@ h1{
     font-family: 'tillana'
 }
 i{
-    color:orange;
+    color:brown;
     font-size: 40px;
 }
 span{
-    color: #f44336
+    color: brown
 }
 
 .border {
@@ -40,7 +38,7 @@ span{
   display: block;
   width: 0;
   height: 3px;
-  background: #f44336;
+  background: brown;
   transition: width 0.3s;
 }
 .border:hover::after {
@@ -63,7 +61,6 @@ span{
 }
 .listes{
     text-decoration: none;
-    color: white;
 }
 .listes:hover{
     color: red;
@@ -73,30 +70,39 @@ span{
 }
 
 #main{
-   height: 400px;
-    margin-top: 150px;
-    margin-left: 50px
+   height: 600px;
+    background: url(images/basket-bg.jpg) center;
+    margin-top: 40px
 }
 a{
     text-decoration: none;
     color: black;
 }
 h2{
-    color: white;
     text-transform: uppercase;
     font-size: 60px;
-    font-family: 'lora'
+    font-family: 'crete round', 'lato';
+    margin-top: 30%;
+    margin-left: 30px
 }
 .btn{
-    background-color: orange;
+    background-color: brown;
     font-size: 25px;
-    margin-left: 70px
+    width: 25%;
+    height: 6%;
+    margin-left: 30px
 }
 .btn:hover{
     animation: wiggle 0.9s infinite;
 }
-
-
+.clique{
+    color: aliceblue;
+}
+.principal{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+}
 
 
 @-webkit-keyframes wiggle {
@@ -133,4 +139,46 @@ h2{
   100% {
     transform: translate(1px, 1px);
   }
+}
+
+/* icones */
+
+#bloc{
+    display: flex;
+}
+.ecole, .team, .licence{
+    margin-left: 20px;
+    border: 2px solid brown;
+    margin-top: 40px;
+    width: 1000px
+}
+.ecole{
+    text-align: center;
+}
+.team{
+    text-align: center
+}
+.licence{
+    text-align: center;
+    margin-right: 20px
+}
+.mpb{
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: dimgrey;
+    height: 100px;
+    width: 100px;
+    border: 2px solid dimgrey;
+    border-radius: 100%;
+    padding: 35px 35px 35px 35px
+}
+#bloc h3{
+    font-size: 40px;
+    text-align: center;
+}
+#bloc p{
+    text-align: center;
+    font-size: 25px;
+    margin: 0 10px 10px 10px;
 }
